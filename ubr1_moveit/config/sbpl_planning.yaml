@@ -1,16 +1,22 @@
-############################################################## Planning settings
+#################################################
 planner:
   initial_epsilon: 5
-  final_epsilon: 1
+  final_epsilon: 3.5
   decrement_epsilon: 0.2
   return_first_solution: false
   max_time: 15
   repair_time: -1
 
-########################################################### Environment settings
+#################################################
 env:
   use_bfs: true
-  use_standard_collision_checking: true
-  attempt_full_shortcut: true
+  attempt_shortcut: true
   interpolation_distance: 0.2
-  joint_motion_primitive_distance: 0.6
+# attempt_full_shortcut: true
+# joint_motion_primitive_distance: 0.6
+
+#################################################
+prim:
+  use_joint_snap: true
+  use_xyzrpy_snap: true
+  use_rpy_snap: true
