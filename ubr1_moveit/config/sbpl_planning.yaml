@@ -1,0 +1,16 @@
+############################################################## Planning settings
+planner:
+  initial_epsilon: 5
+  final_epsilon: 1
+  decrement_epsilon: 0.2
+  return_first_solution: false
+  max_time: 15
+  repair_time: -1
+
+########################################################### Environment settings
+env:
+  use_bfs: true
+  use_standard_collision_checking: true
+  attempt_full_shortcut: true
+  interpolation_distance: 0.2
+  joint_motion_primitive_distance: 0.6
