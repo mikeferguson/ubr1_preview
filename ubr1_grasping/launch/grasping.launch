@@ -1,6 +1,7 @@
 <launch>
 
-  <arg name="start_moveit" default="true" />  
+  <arg name="start_moveit" default="true" />
+  <arg name="debug" default="false" />
 
   <node pkg="ubr1_grasping" name="basic_grasping_perception" type="basic_grasping_perception" output="screen" >
     <param name="use_debug" value="true" />
@@ -8,6 +9,7 @@
   
   <include if="$(arg start_moveit)" file="$(find ubr1_moveit)/launch/move_group.launch">
     <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
   </include>
 
 </launch>
