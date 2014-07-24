@@ -32,8 +32,8 @@ primitives:
     joint_snap: true
     xyzrpy_snap: true
     rpy_snap: true
-    joint_snap_thresh: 0.1
-    xyzrgb_snap_thresh: 0.1
+    joint_snap_thresh: 0.15
+    xyzrgb_snap_thresh: 0.15
     simple:
      - [ [ 8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 0.2]
      - [ [-8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 0.2]
