@@ -1,0 +1,5 @@
+<launch>
+
+  <rosparam file="$(find ubr1_moveit)/config/link_spheres.yaml" command="load" />
+
+</launch>

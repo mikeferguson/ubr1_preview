@@ -1,0 +1,15 @@
+<launch>
+
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find ubr1_gazebo)/robots/ubr1_robot.urdf.xacro" />
+  <param name="robot_description_semantic" textfile="$(find ubr1_moveit)/config/ubr1.srdf"/>
+  <rosparam file="$(find ubr1_moveit)/config/link_spheres.yaml" command="load" />
+
+  <param name="use_gui" value="true" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen">
+    <param name="use_gui" value="true" />
+  </node>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" />
+
+</launch>
