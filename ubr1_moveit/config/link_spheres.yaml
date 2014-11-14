@@ -14,8 +14,8 @@ link_spheres:
   fixed_torso_link:
     - {x: 0.15, y: 0.4, z: 0.0, radius: 0.2}
   torso_lift_link:
-    - {x: -0.1, y: 0.0, z: 0.1, radius: 0.2}
-    - {x: 0.0, y: 0.0, z: 0.3, radius: 0.2}
+    - {x: -0.1, y: 0.0, z: 0.1, radius: 0.01}
+    - {x: 0.0, y: 0.0, z: 0.3, radius: 0.01}
     - {x: 0.0, y: 0.0, z: 0.5, radius: 0.2}
   fixed_bellows_link:
     - {x: 0.0, y: 0.0, z: 0.0, radius: 0.01}
@@ -50,14 +50,16 @@ link_spheres:
     - {x: 0.19, y: -0.03, z: -0.015, radius: 0.05}
     - {x: 0.24, y: 0.03, z: 0.00, radius: 0.05}
     - { x: 0.24, y: -0.03, z: 0.0, radius: 0.05}
+  wrist_flex_link:
+    - {x: 0.0, y: 0.0, z: 0.0, radius: 0.01}
   wrist_roll_link:
+    - {x: 0.0, y: 0.0, z: 0.0, radius: 0.01}
+  gripper_link:
     - {x: 0.055, y: -0.03, z: 0.00, radius: 0.04}
     - {x: 0.055, y: 0.0, z: 0.00, radius: 0.04}
     - {x: 0.055, y: 0.03, z: 0.00, radius: 0.04}
     - {x: 0.025, y: 0.02, z: 0.00, radius: 0.04}
     - {x: 0.025, y: -0.02, z: 0.00, radius: 0.04}
-  wrist_flex_link:
-    - {x: 0.0, y: 0.0, z: 0.0, radius: 0.01}
   left_gripper_finger_link:
     - {x: -0.02, y: 0.005, z: 0.00, radius: 0.015}
     - {x: -0.01, y: 0.005, z: 0.00, radius: 0.015}

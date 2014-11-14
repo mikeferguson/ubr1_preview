@@ -22,9 +22,9 @@ env:
   attempt_shortcut: true
   interpolation_distance: 0.1
   planning_link_sphere_radius: 0.05
-  field:
-    links:
-     - base_link
+# field:
+#   links:
+#    - base_link
 
 #################################################
 primitives:
